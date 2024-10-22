@@ -1,0 +1,286 @@
+body {
+  background-color: #eeebe8;
+}
+
+.cart-icon {
+  width: 80px;
+  height: 80px;
+  mix-blend-mode: darken;
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  border-bottom: 1px solid;
+  background-color: #d3d2dc;
+  position: -webkit-sticky;
+  color: #050316;
+}
+
+.logo {
+  font-size: 37px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #050316;
+  margin-right: 130px;
+}
+
+.navbar:hover {
+  background-color: #d3d2dc;
+  color: #333;
+}
+
+.navbar a:hover {
+  background-color: #d3d2dc;
+}
+
+.text {
+  text-align: center;
+  display: absolute;
+  margin-top: 6%;
+  font-size: xx-large;
+  color: #050316;
+}
+
+.icon {
+  width: 70px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: darken;
+}
+
+.icon-container{
+  display:contents;
+  justify-content: right;
+  width: 100%;
+  margin-left: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  /*margin-bottom: 40px;*/
+}
+
+.department {
+  position: relative;
+  width: 300px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  color: #050316;
+}
+
+.logos{
+  width:fit-content ;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: darken;
+}
+.info-item {
+  width: 200px;
+  text-align: center;
+}
+
+.info-item h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .departments {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info-item {
+    margin-bottom: 20px;
+  }
+}
+
+.product-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  flex: 0 0 30%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    flex: 0 0 45%; /* Adjust to 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    flex: 0 0 100%; /* 1 card per row on very small screens */
+  }
+}
+
+.product-card img{
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-info h2{
+  font-size: 18px;
+  margin:10px 0;
+}
+
+.product-info p{
+  font-size: 16px;
+  margin: 5px 0;
+  color: #777
+}
+
+.sizes{
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.prices{
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.color-options{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.color.navy-blue{
+  background-color: #000053;
+}
+
+.color.beige{
+  background-color: #dfdfa8;
+}
+
+.color.white{
+  background-color: white;
+}
+
+.color.black{
+  background-color: black;
+}
+
+.color.coffee{
+  background-color: #b88139;
+}
+
+.color.red{
+  background-color: #b10101;
+}
+
+.color.brown{
+  background-color: #8a491e;
+}
+
+.color.grey{
+  background: #5c5c5c;
+}
+
+.color.mint-green{
+  background-color: #55a56d;
+}
+
+.color.mahroon{
+  background-color: #410909;
+}
+
+.color.forest-green{
+  background-color: #013301;
+}
+
+.color.metallic{
+  background-color: #333333;
+}
+
+.color.pearl{
+  background-color: #f5e7e7;
+}
+
+.color.pale-red{
+  background-color: #c52f2f;
+}
+
+.color.lilac{
+  background-color: #5c5c5c;
+}
+
+.color.pink{
+  background-color: #f7294b;
+}
+
+.color.sky-blue{
+  background-color: #bcbbff;
+}
+
+.color.teal{
+  background-color: #02cccc;
+}
